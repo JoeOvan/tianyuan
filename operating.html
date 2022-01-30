@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <title>广东粤祥天源健康产业有限责任公司</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+</head>
+<body>
+<div class="wrapper mobile-no-footer">
+    <div class="header-nav-wrap">
+        <div class="header-wrap home-nav">
+            <div class="content clearfix">
+                <div class="logo-wrap" id="logoWrap">
+
+                </div>
+                <div class="info-wrap">
+                    <div id="login" style="display: none">
+                        <a href="javascript:0;" class="btn btn-login">登录</a>
+                    </div>
+                </div>
+                <div class="nav-icon-wrap">
+                    <div class="text">导航</div>
+                    <div class="icon nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav-inner-wrap">
+                <div class="content">
+                    <ul class="list" id="menuList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="section-wrap operating-wrap">
+
+        <div class="navbar-wrap">
+            <div class="content crumbs-nav">
+                <a href="/" class="crumbs-item">首页</a><i class="crumbs-arrow">&gt;</i>
+                <a href="./operating.html?index=1" class="crumbs-item">关于我们</a>
+            </div>
+            <div class="container">
+                <div class="tabbar-wrap swiper-container swiper1">
+                    <div class="tabbar swiper-wrapper" id="tabbarList">
+
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="col-content-wrap">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-no-swiping col-content-item active">
+                                <div class="section-content">
+<!--                                    <div class="header-title-wrap">-->
+<!--                                        <img src="assets/images/company-intro-title.png" alt="" class="header-title">-->
+<!--                                    </div>-->
+                                    <!--请求运营中心简介文章数据-->
+                                    <div class="operating-intro-content" id="introContent">
+                                        <div class="bg-content">
+                                            <div class="left-content"></div>
+                                            <div class="right-content"></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="cover-wrap" id="introCover"></div>
+                                            <div class="text-wrap" id="introText"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping col-content-item">
+                                <div class="content section-content" id="coreContent">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping col-content-item">
+                                <div class="content section-content" id="historyContent">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping col-content-item">
+                                <div class="content section-content" id="honorContent">
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping col-content-item" id="imageContent">
+                                <div class=" operating-contact-content" id="contactContent">
+                                    <div class="content">
+                                        <div class="contact-wrap">
+                                            <div class="cover-wrap" id="contactCover"></div>
+                                            <div class="text-wrap" id="contactText"></div>
+                                        </div>
+                                        <div class="map-wrap" id="mapWrap">
+                                            <div id="map-container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping col-content-item" id="recruitContent">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer-copyright-wrap">
+            <div class="content">
+                <div class="company-info" id="companyInfo">
+
+                </div>
+                <div class="footer-link-wrap">
+                    <div id="footerLink">
+
+                        <span class="link-item">相关链接：</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-message"></i>
+                <span class="icon-text">在线留言</span>
+            </a>
+            <div class="hide-wrap message-wrap">
+                <form>
+                    <label for="comment">在线留言</label>
+                    <textarea id="comment" name="comment" placeholder="输入你的留言(200字以内)"
+                              maxlength="200"></textarea>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-submit" onclick="submitMsg()">提&nbsp;&nbsp;交</button>
+                        <button type="button" class="btn btn-reset" onclick="reset()">重&nbsp;&nbsp;置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-qrcode"></i>
+                <span class="icon-text">二维码</span>
+            </a>
+            <div class="hide-wrap qrcode-wrap" id="qrcodeWrap">
+
+            </div>
+        </div>
+        <div class="item-side">
+            <a  onclick="topFunction()" class="icon-item"><i class="icon-back-top"></i>
+                <span class="icon-text">返回顶部</span>
+            </a>
+        </div>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrap modal-login-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        登录
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-login">
+                        <div class="modal-login-item modal-login-wechat">
+                            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx91d6d200e7e7c451&redirect_uri=http%3A%2F%2Fbdadmin.winzkj.com%2Findex.html&response_type=code&scope=snsapi_login&state=3d6be0a4035d839573b04816624a415e#wechat_redirect"
+                               class="login-link"><i class="icon icon-login-wechat"></i><strong>微信登录</strong></a></div>
+                        <div class="modal-login-item modal-login-qq"><a href="" class="login-link"><i
+                                class="icon icon-login-qq"></i><strong>QQ登录</strong></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<div class="tip-wrap">
+                    <input type="radio" name="" id="" class="radio">我已阅读用户协议 <a href="" class="link">用户协议</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap modal-user-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><i class="icon icon-sign"></i><a href="javascript:0;" class="icon icon-close"><span>×</span></a></div>
+                <div class="modal-body">
+                    <div class="title"><i class="icon icon-company"></i>
+                        <div class="text">您暂未进行企业认证，现在去认证吧~</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="go-link"><a href="cert.html" class="link">好的，去认证</a></div>
+                    <div class="link-close"><a href="javascript:0;">再想想</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-fixed">
+        <ul class="list">
+            <li class="item"><a href="./operating.html?index=1" class="link"><i class="icon icon-about"></i><span class="text">关于我们</span></a></li>
+            <li class="item"><a href="./company-news.html?index=1" class="link"><i class="icon icon-news"></i><span class="text">新闻中心</span></a></li>
+            <li class="item"><a href="./project-pc.html?id=13&index=1" class="link"><i class="icon icon-project"></i><span class="text">旗下项目</span></a></li>            <li class="item"><a href="./partner.html?id=84&index=1" class="link"><i class="icon icon-cooperation"></i><span class="text">合作伙伴</span></a></li>
+            <li class="item"><a href="./bids.html" class="link"><i class="icon icon-cooperation"></i><span class="text">招标公告</span></a></li>
+            <li class="item"><a href="join-us.html?id=86&index=1" class="link"><i class="icon icon-cooperation"></i><span class="text">人才战略</span></a></li>
+            <li class="item"><a href="professor.html?id=87&index=1" class="link"><i class="icon icon-join"></i><span class="text">专家团队</span></a></li>
+        </ul>
+        <div class="copyright" id="copyright">
+
+        </div>
+    </div>
+</div>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/base.js"></script>
+<script src="static/js/operating.js"></script>
+<script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=rDMpsjfDSCD67aFdBqaVRxoyBXsLkcQ3"></script>
+<script>
+    $(function () {
+
+        var flag = true;
+        $(document).on("click", ".tab-item:eq(4)",function () {
+            // alert(11111111);
+            if(flag == true) {
+                setMap();
+                flag = false;
+            }
+        });
+
+
+        if(GetQueryString("type")==5) {
+            setTimeout("setMap()",1000);
+        }
+
+    });
+
+    function setMap(type) {
+
+        /**
+         * 请求网站信息
+         */
+        let url = URL.getWebInfo;
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            /*后端返回的数据格式json*/
+            success: function(data) {
+
+                // console.log(data);
+                if(data.code == 0) {
+                    // alert(data.msg);
+                    let name = data.data.name;
+                    let address = data.data.address;
+                    let phone = data.data.phone;
+                    let locationX = data.data.locationX;
+                    let locationY = data.data.locationY;
+
+                    var map = new BMapGL.Map('map-container'); // 创建Map实例
+                    var point = new BMapGL.Point(locationX, locationY);
+                    map.centerAndZoom(point, 19); // 初始化地图,设置中心点坐标和地图级别
+                    map.setCenter(point);
+                    map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
+
+
+                    // 创建添加点标记
+                    var marker = new BMapGL.Marker(point);
+                    map.addOverlay(marker);
+// 创建图文信息窗口
+                    var textContent = "<div><h4 style='margin:0 0 5px 0;'>${name}</h4><p style='width:300px;margin:10px 0;line-height:1.5;font-size:13px;'>联系地址：${address}</p><p style='width:300px;margin-bottom:30px;line-height:1.5;font-size:13px;'>联系电话：${phone}</p></div>";
+
+                    var sContent = textContent.replace("${name}",name).replace("${address}",address).replace("${phone}",phone);
+
+                    var opts = {
+                        width:330,
+                        height:120
+                    }
+                    var infoWindow = new BMapGL.InfoWindow(sContent,opts);
+                    // window.addEventListener('load',function (){
+                    // });
+
+                    marker.openInfoWindow(infoWindow);
+// marker添加点击事件
+                    marker.addEventListener('click', function () {
+                        this.openInfoWindow(infoWindow);
+                        // 图片加载完毕重绘infoWindow
+                        // document.getElementById('imgDemo').onload = function () {
+                        //     infoWindow.redraw(); // 防止在网速较慢时生成的信息框高度比图片总高度小，导致图片部分被隐藏
+                        // };
+                    });
+
+                    map.panBy(0, 0);//中心点偏移多少像素（width,height）为div 宽高的1/2;
+
+
+
+                }
+
+            },
+            error: function(message) {
+                console.log("请求失败！");
+            }
+        });
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>广东粤祥天源健康产业有限责任公司</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/layui/css/layui.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/layui/layui.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+</head>
+<body>
+<div class="wrapper mobile-no-footer">
+    <div class="header-nav-wrap">
+        <div class="header-wrap home-nav">
+            <div class="content clearfix">
+                <div class="logo-wrap" id="logoWrap">
+
+                </div>
+                <div class="info-wrap">
+                    <div id="login" style="display: none">
+                        <a href="javascript:0;" class="btn btn-login">登录</a>
+                    </div>
+                </div>
+                <div class="nav-icon-wrap">
+                    <div class="text">导航</div>
+                    <div class="icon nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav-inner-wrap">
+                <div class="content">
+                    <ul class="list" id="menuList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="section-wrap">
+
+            <div class="navbar-wrap">
+                <div class="crumbs-nav">
+                    <div class="content">
+                        <a href="/" class="crumbs-item">首页</a><i class="crumbs-arrow">&gt;</i>
+                        <a href="./partner.html?index=1" class="crumbs-item">合作伙伴</a>
+                    </div>
+                </div>
+                <div class="tabbar-wrap swiper-container swiper1">
+                    <div class="tabbar swiper-wrapper" id="tabbarList">
+
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="col-content-wrap">
+                <div class="content swiper-loading content-item-industry">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper" id="swiper-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer-copyright-wrap">
+            <div class="content">
+                <div class="company-info" id="companyInfo">
+
+                </div>
+                <div class="footer-link-wrap">
+                    <div id="footerLink">
+
+                        <span class="link-item">相关链接：</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-message"></i>
+                <span class="icon-text">在线留言</span>
+            </a>
+            <div class="hide-wrap message-wrap">
+                <form>
+                    <label for="comment">在线留言</label>
+                    <textarea id="comment" name="comment" placeholder="输入你的留言(200字以内)"
+                              maxlength="200"></textarea>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-submit" onclick="submitMsg()">提&nbsp;&nbsp;交</button>
+                        <button type="button" class="btn btn-reset" onclick="reset()">重&nbsp;&nbsp;置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-qrcode"></i>
+                <span class="icon-text">二维码</span>
+            </a>
+            <div class="hide-wrap qrcode-wrap" id="qrcodeWrap">
+
+            </div>
+        </div>
+        <div class="item-side">
+            <a  onclick="topFunction()" class="icon-item"><i class="icon-back-top"></i>
+                <span class="icon-text">返回顶部</span>
+            </a>
+        </div>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrap modal-register-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        注册
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-body-item"><label for=""><i class="icon icon-company"></i></label><input
+                                type="text" class="input-text" name="enterpriseName" placeholder="请输入企业名称">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-name"></i></label><input
+                                type="text" class="input-text" name="personName" placeholder="请输入负责人姓名">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-phone"></i></label><input
+                                type="text" class="input-text" name="phone" placeholder="请输入联系方式">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-address"></i></label><input
+                                type="text" class="input-text" name="address" placeholder="请输入联系地址">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-submit" onclick="registerSubmit()">
+                        提交
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div>
+    </div>
+    <div class="modal-wrap modal-login-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        登录
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-login">
+                        <div class="modal-login-item modal-login-wechat">
+                            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx91d6d200e7e7c451&redirect_uri=http%3A%2F%2Fbdadmin.winzkj.com%2Findex.html&response_type=code&scope=snsapi_login&state=3d6be0a4035d839573b04816624a415e#wechat_redirect"
+                               class="login-link"><i class="icon icon-login-wechat"></i><strong>微信登录</strong></a></div>
+                        <div class="modal-login-item modal-login-qq"><a href="" class="login-link"><i
+                                class="icon icon-login-qq"></i><strong>QQ登录</strong></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<div class="tip-wrap">
+                    <input type="radio" name="" id="" class="radio">我已阅读用户协议 <a href="" class="link">用户协议</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap modal-user-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><i class="icon icon-sign"></i><a href="javascript:0;" class="icon icon-close"><span>×</span></a></div>
+                <div class="modal-body">
+                    <div class="title"><i class="icon icon-company"></i>
+                        <div class="text">您暂未进行企业认证，现在去认证吧~</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="go-link"><a href="cert.html" class="link">好的，去认证</a></div>
+                    <div class="link-close"><a href="javascript:0;">再想想</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-fixed">
+        <ul class="list">
+            <li class="item"><a href="./operating.html?index=1" class="link"><i class="icon icon-about"></i><span class="text">关于我们</span></a></li>
+            <li class="item"><a href="./company-news.html?index=1" class="link"><i class="icon icon-news"></i><span class="text">新闻中心</span></a></li>
+            <li class="item"><a href="./project-pc.html?id=13&index=1" class="link"><i class="icon icon-project"></i><span class="text">旗下项目</span></a></li>
+            <li class="item"><a href="./partner.html?id=84&index=1" class="link"><i class="icon icon-cooperation"></i><span class="text">合作伙伴</span></a></li>
+            <li class="item"><a href="./bids.html" class="link"><i class="icon icon-bids"></i><span class="text">招标公告</span></a></li>
+            <li class="item"><a href="./join-us.html?id=86&index=1" class="link"><i class="icon icon-talents"></i><span class="text">人才战略</span></a></li>
+            <li class="item"><a href="./professor.html?id=87&index=1" class="link"><i class="icon icon-professor"></i><span class="text">专家团队</span></a></li>
+        </ul>
+        <div class="copyright" id="copyright">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="assets/js/api.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+<script type="text/javascript" src="static/js/partner.js"></script>
+</body>
+</html>

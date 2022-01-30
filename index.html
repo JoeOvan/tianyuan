@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>广东粤祥天源健康产业有限责任公司</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/layui/css/layui.css"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/layui/layui.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+</head>
+<body>
+<div class="wrapper home-wrap">
+    <div class="header-nav-wrap">
+        <div class="header-wrap home-nav">
+            <div class="content clearfix">
+                <div class="logo-wrap" id="logoWrap">
+
+                </div>
+                <div class="info-wrap">
+                    <div id="login" style="display: none">
+                        <a href="javascript:0;" class="btn btn-login">登录</a>
+                    </div>
+                </div>
+                <div class="nav-icon-wrap">
+                    <div class="text">导航</div>
+                    <div class="icon nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav-inner-wrap">
+                <div class="content">
+                    <ul class="list" id="menuList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="swiper-container home-focus-wrap">
+            <div class="swiper-wrapper" id="home-slide">
+
+            </div>
+<!--            <div class="focus-swiper-top"></div>-->
+<!--            <div class="focus-swiper-right"></div>-->
+<!--            <div class="focus-swiper-bottom"></div>-->
+<!--            <div class="focus-swiper-left"></div>-->
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!--轮播切换-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+<!--            <div class="swiper-scrollbar"></div>-->
+        </div>
+        <div class="seciton-wrap section-news">
+            <div class="item-label">
+                <i class="icon icon-news"></i>
+            </div>
+            <div class="item-text" id="mobileScroll">
+                <ul class="list" id="noticeList">
+
+                </ul>
+            </div>
+            <div class="item-next"><a href="./company-news.html?index=1"><i class="icon icon-next"></i></a></div>
+        </div>
+        <div class="section-wrap section-company">
+            <div class="section-header">
+                <h3 class="resize-title wow animate__animated animate__fadeInUp"><span class="label">News Center</span><br><strong class="title">新闻中心</strong>
+                    <hr>
+                </h3>
+            </div>
+            <div class="content section-content col-wrap-1 clearfix">
+                <div class="section-content-item section-colum-first">
+                    <div class="col-title-wrap">
+                        <h2 class="title-wrap clearfix">
+                            <strong class="title wow animate__animated animate__slideInRight">行业资讯</strong>
+                            <a href="./company-news.html?index=3" class="more">更多<i class="icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="section-header section-header-mobile">
+                        <h3><span class="label">Information</span><br><strong class="title">行业资讯</strong></h3>
+                    </div>
+                    <div class="col-content-wrap">
+
+                    </div>
+                    <div class="link-wrap">
+                        <a href="./company-news.html?index=3" class="link-more wow animate__animated animate__bounceIn">查看更多&gt;</a>
+                    </div>
+                </div>
+                <div class="section-content-item section-colum-middle">
+                    <div class="section-header">
+                        <h3><span class="label">Industry dynamics</span><br><strong class="title">产业动态</strong></h3>
+                    </div>
+                    <div class="col-title-wrap">
+                        <h2 class="title-wrap clearfix">
+                            <strong class="title wow animate__animated animate__slideInRight">产业动态</strong>
+                            <a href="./company-news.html?index=1" class="more">更多<i class="icon icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="col-content-wrap">
+                        <ul class="list" id="newsMobileList">
+
+                        </ul>
+                    </div>
+                    <div class="cover-wrap" id="newsFristImg">
+
+                    </div>
+                    <div class="col-content-wrap news-swiper-wrap" id="scroll">
+                        <ul class="list" id="newsList">
+
+                        </ul>
+                    </div>
+                    <div class="link-wrap">
+                        <a href="./company-news.html?index=1" class="link-more wow animate__animated animate__bounceIn">查看更多&gt;</a>
+                    </div>
+                </div>
+                <div class="section-content-item section-colum-end">
+                    <div class="col-title-wrap">
+                        <h2 class="title-wrap clearfix wow animate__animated animate__backInDown">
+                            <strong class="title wow animate__animated animate__slideInRight">通知公告</strong>
+                            <a href="./company-news.html?index=4" class="more">更多<i class="icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="section-header">
+                        <h3><span class="label">announcement</span><br><strong class="title">通知公告</strong></h3>
+                    </div>
+                    <div class="cover-wrap" id="industryFristImg">
+
+                    </div>
+                    <div class="col-content-wrap">
+                        <ul class="list" id="industryList">
+
+                        </ul>
+                        <div class="link-more-wrap">
+                            <a href="./company-news.html?type=2" class="link-more wow animate__animated animate__bounceIn">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrap section-companye">
+            <div class="section-header">
+                <h3 class="content wow animate__animated animate__backInRight"><span class="label">Company Profile</span><br><strong class="title">企业介绍</strong>
+                    <hr>
+                </h3>
+            </div>
+            <div class="content section-content">
+                <div class="video-wrap">
+                    <video src="/assets/video/tianyuan.mp4" controls="controls" poster="assets/images/video.png">
+                        你的浏览器不支持video标签
+                    </video>
+                </div>
+                <div>
+                    <div class="title">企业介绍/Company Profile</div>
+                    <div id="companyeContent" style="display: none"></div>
+                </div>
+            </div>
+            <div class="link-wrap">
+                <a href="./operating.html?index=1" class="link-more wow animate__animated animate__bounceIn">查看更多&#62;</a>
+            </div>
+        </div>
+        <div class="section-wrap section-document">
+            <div class="section-header">
+                <h3 class="content wow animate__animated animate__backInLeft"><span class="label">Projects</span><br><strong class="title">旗下项目</strong><hr></h3>
+            </div>
+            <div class="content section-content">
+                <div class="swiper-container document-swiper-wrap">
+                    <div class="swiper-wrapper" id="bidsList">
+
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="link-wrap">
+                <a href="./project-pc.html?id=13&index=1" class="link-more wow animate__animated animate__bounceIn">查看更多&gt;</a>
+            </div>
+        </div>
+        <div class="section-wrap section-exhibition" style="display: none;">
+            <div class="section-header">
+                <h3 class="content wow animate__animated animate__backInRight"><span class="label">Projects</span><br><strong class="title">旗下项目</strong></h3>
+            </div>
+            <div class="content section-content" id="exhibitionList">
+
+                <div class="link-wrap">
+                    <a href="./project.html" class="link-more wow animate__animated animate__bounceIn">查看更多&gt;</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrap section-territory">
+            <div class="section-header">
+                <h3 class="content wow animate__animated animate__backInUp"><span class="label">territory</span><br><strong class="title">产业版图</strong><hr></h3>
+            </div>
+            <div class="content section-content">
+                <img src="assets/images/bg-territory.png" alt="" class="pc-cover">
+<!--                <img src="assets/images/bg-territory-mobile.png" alt="" class="mobile-cover">-->
+            </div>
+        </div>
+        <div class="section-wrap section-attract" style="display: none;">
+            <div class="section-header cooperation">
+                <h3 class="content wow animate__animated animate__backInLeft"><span class="label">attract investment  </span><br><strong class="title">招商合作项目</strong><hr></h3>
+            </div>
+            <div class="content section-content">
+                <div class="section-content-item section-colum-intro">
+                    <div class="col-title-wrap">
+                        <h2 class="title-wrap clearfix">
+                            <strong class="title">项目介绍</strong>
+                            <a href="" class="more">更多<i class="icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="col-content-wrap" id="attractList">
+
+                    </div>
+                    <div class="link-wrap">
+                        <a href="./attract.html?index=1" class="link-more wow animate__animated animate__bounceIn">查看更多&gt;</a>
+                    </div>
+                </div>
+                <div class="section-content-item section-colum-message">
+                    <div class="col-title-wrap">
+                        <h2 class="title-wrap clearfix">
+                            <strong class="title">在线留言</strong>
+                        </h2>
+                    </div>
+                    <div class="col-content-wrap">
+                        <!--<form>
+                            <label for="comment"></label>
+                            <textarea id="comment" name="comment" placeholder="输入你的留言(200字以内)"
+                                      maxlength="200"></textarea>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-submit" onclick="submitMsg()">提交</button>
+                                <button type="button" class="btn btn-reset" onclick="reset()">重置</button>
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrap section-partner" style="display: none;">
+            <div class="section-header">
+                <h3 class="content wow animate__animated animate__backInUp"><span class="label">Our partner</span><br><strong class="title">我们的合作伙伴</strong><hr></h3>
+            </div>
+            <div class="content section-content" id="partnerContent">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer-copyright-wrap">
+            <div class="content">
+                <div class="company-info" id="companyInfo">
+
+                </div>
+                <div class="footer-link-wrap">
+                    <div id="footerLink">
+
+                        <span class="link-item">相关链接：</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-message"></i>
+            <span class="icon-text">在线留言</span>
+            </a>
+            <div class="hide-wrap message-wrap">
+                <form>
+                    <label for="comment">在线留言</label>
+                    <textarea id="comment" name="comment" placeholder="输入你的留言(200字以内)"
+                              maxlength="200"></textarea>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-submit" onclick="submitMsg()">提&nbsp;&nbsp;交</button>
+                        <button type="button" class="btn btn-reset" onclick="reset()">重&nbsp;&nbsp;置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="item-side">
+            <a href="javascript:;" class="icon-item"><i class="icon-qrcode"></i>
+                <span class="icon-text">二维码</span>
+            </a>
+            <div class="hide-wrap qrcode-wrap" id="qrcodeWrap">
+
+            </div>
+        </div>
+        <div class="item-side">
+            <a  onclick="topFunction()" class="icon-item"><i class="icon-back-top"></i>
+                <span class="icon-text">返回顶部</span>
+            </a>
+        </div>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrap modal-register-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        注册
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-body-item"><label for=""><i class="icon icon-company"></i></label><input
+                                type="text" class="input-text" name="enterpriseName" placeholder="请输入企业名称">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-name"></i></label><input
+                                type="text" class="input-text" name="personName" placeholder="请输入负责人姓名">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-phone"></i></label><input
+                                type="text" class="input-text" name="phone" placeholder="请输入联系方式">
+                        </div>
+                        <div class="modal-body-item"><label for=""><i class="icon icon-address"></i></label><input
+                                type="text" class="input-text" name="address" placeholder="请输入联系地址">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-submit" onclick="registerSubmit()">
+                        提交
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div>
+    </div>
+    <div class="modal-wrap modal-login-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        登录
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-login">
+                        <div class="modal-login-item modal-login-wechat">
+                            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx91d6d200e7e7c451&redirect_uri=http%3A%2F%2Fbdadmin.winzkj.com%2Findex.html&response_type=code&scope=snsapi_login&state=3d6be0a4035d839573b04816624a415e#wechat_redirect"
+                               class="login-link"><i class="icon icon-login-wechat"></i><strong>微信登录</strong></a></div>
+                        <div class="modal-login-item modal-login-qq"><a href="" class="login-link"><i
+                                class="icon icon-login-qq"></i><strong>QQ登录</strong></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap modal-user-wrap">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><i class="icon icon-sign"></i><a href="javascript:0;" class="icon icon-close"><span></span></a></div>
+                <div class="modal-body">
+                    <div class="title"><i class="icon icon-company"></i>
+                        <div class="text">您暂未进行企业认证，现在去认证吧~</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="go-link"><a href="cert.html" class="link">好的，去认证</a></div>
+                    <div class="link-close"><a href="javascript:0;">再想想</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-fixed">
+        <ul class="list">
+            <li class="item"><a href="./operating.html?index=1" class="link"><i class="icon icon-about"></i><span class="text">关于我们</span></a></li>
+            <li class="item"><a href="./company-news.html?index=1" class="link"><i class="icon icon-news"></i><span class="text">新闻中心</span></a></li>
+            <li class="item"><a href="./project-pc.html?id=13&index=1" class="link"><i class="icon icon-project"></i><span class="text">旗下项目</span></a></li>
+            <li class="item"><a href="./partner.html?id=84&index=1" class="link"><i class="icon icon-cooperation"></i><span class="text">合作伙伴</span></a></li>
+            <li class="item"><a href="./bids.html" class="link"><i class="icon icon-bids"></i><span class="text">招标公告</span></a></li>
+            <li class="item"><a href="./join-us.html?id=86&index=1" class="link"><i class="icon icon-talents"></i><span class="text">人才战略</span></a></li>
+            <li class="item"><a href="./professor.html?id=87&index=1" class="link"><i class="icon icon-professor"></i><span class="text">专家团队</span></a></li>
+        </ul>
+        <div class="copyright" id="copyright">
+
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="assets/js/api.js"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/base.js"></script>
+    <script>
+        $(function () {
+
+            new WOW().init();
+
+        });
+    </script>
+</body>
+</html>
